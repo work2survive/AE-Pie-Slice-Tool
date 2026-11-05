@@ -17,11 +17,26 @@
         var panel = (thisObj instanceof Panel)
             ? thisObj
             : new Window("palette", "Pie / Slice Generator", undefined, { resizeable: true });
+        if (!(thisObj instanceof Panel)) {
+            panel.text = "Pie / Slice Generator";
+        }
 
         panel.orientation = "column";
         panel.alignChildren = ["fill", "top"];
         panel.spacing = 8;
         panel.margins = 12;
+
+        // ---------------------------------------------------------------------
+        // UI Header (Panel Title + Version & Description)
+        // ---------------------------------------------------------------------
+        var pnlHeader = panel.add("panel", undefined, "Pie / Slice Generator");
+        pnlHeader.orientation = "column";
+        pnlHeader.alignChildren = ["fill", "top"];
+        pnlHeader.alignment = ["fill", "top"];
+        pnlHeader.spacing = 3;
+        pnlHeader.margins = [10, 8, 10, 8];
+
+        var lblDesc = pnlHeader.add("statictext", undefined, "v4.1 - Procedural Bézier Shape Layer pie & slice sector generator.");
 
         // ---------- Dimensions ----------
         var grpRadius = panel.add("panel", undefined, "Dimensions");
@@ -92,6 +107,8 @@
         };
 
         var btnCreate = panel.add("button", undefined, "Create Pie Slice Shape Layer");
+        btnCreate.alignment = ["fill", "top"];
+        btnCreate.preferredSize = [-1, 36];
 
         function numberFromField(field, fallback) {
             var n = parseFloat(field.text);
@@ -199,6 +216,7 @@
             try {
                 var layer = comp.layers.addShape();
                 layer.name = "Pie Slice Shape";
+                layer.notShyable = true;
 
                 function addSlider(name, value) {
                     var parade = layer.property("ADBE Effect Parade");
@@ -246,6 +264,25 @@
                 alert("Could not create Pie Slice Shape:\n" + err.toString());
             } finally {
                 app.endUndoGroup();
+            }
+        };
+
+        // --- Bottom Subtle Repository Link ---
+        var grpRepoLink = panel.add("group");
+        grpRepoLink.orientation = "row";
+        grpRepoLink.alignment = ["fill", "bottom"];
+        grpRepoLink.alignChildren = ["center", "center"];
+        grpRepoLink.margins = [0, 4, 0, 0];
+        var lblRepoLink = grpRepoLink.add("statictext", undefined, "GitHub: work2survive/AE-Pie-Slice-Tool");
+        lblRepoLink.helpTip = "https://github.com/work2survive/AE-Pie-Slice-Tool";
+        lblRepoLink.onClick = function() {
+            var url = "https://github.com/work2survive/AE-Pie-Slice-Tool";
+            if (typeof window !== "undefined" && window.open) {
+                window.open(url, "_blank");
+            } else if ($.os.indexOf("Windows") !== -1) {
+                system.callSystem('explorer "' + url + '"');
+            } else {
+                system.callSystem('open "' + url + '"');
             }
         };
 
