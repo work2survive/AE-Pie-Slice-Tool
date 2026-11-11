@@ -1,15 +1,15 @@
 # AE Pie Slice Tool (v4.1)
 
-[![Live Browser Simulator](https://img.shields.io/badge/Live%20Demo-AE%20ScriptUI%20Simulator-2c8cff?style=for-the-badge&logo=javascript)](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx)
+[![Live Browser Simulator](https://img.shields.io/badge/Live%20Demo-AE%20ScriptUI%20Simulator-2c8cff?style=for-the-badge&logo=javascript)](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx&autobuild=true)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-CS6%20--%20CC%202026%2B-9999FF?style=for-the-badge&logo=adobeaftereffects)](https://www.adobe.com/products/aftereffects.html)
 [![Built with Antigravity](https://img.shields.io/badge/Built%20With-Antigravity-4285F4?style=for-the-badge&logo=google)](https://deepmind.google/)
 
-**Live Demo**: [https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx)
+**Live Demo**: [https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx&autobuild=true](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx&autobuild=true)
 
 A powerful, expression-driven Adobe After Effects ScriptUI panel for generating parametric circular sectors, pie slices, arcs, and elliptical wedges as native Shape Layers.
 
-> **Live Browser Simulator**: Test and preview this tool interactively in the [AE JS & ScriptUI Simulator](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx) directly in your web browser without launching After Effects!
+> **Live Browser Simulator**: Test and preview this tool interactively in the [AE JS & ScriptUI Simulator](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx&autobuild=true) directly in your web browser without launching After Effects!
 
 Designed for motion designers, infographic artists, and UI animators who need clean, animatable pie charts and circular slices with independent corner rounding and zero visual artifacts. Compatible with Adobe After Effects CS6 through CC 2026+.
 
@@ -57,7 +57,15 @@ Designed for motion designers, infographic artists, and UI animators who need cl
 
 ## 🚀 Installation
 
-### Option 1: Dockable Panel (Recommended)
+### Option 1: After Effects Menu (Recommended)
+1. Open Adobe After Effects.
+2. Navigate to **File > Scripts > Install ScriptUI Panel...**
+3. Browse to and select `Pie_Slice_Generator.jsx`.
+4. After Effects will automatically copy the script into your user `ScriptUI Panels` folder.
+5. Restart After Effects when prompted.
+6. Access and dock the panel from the top menu: **Window > Pie_Slice_Generator.jsx**.
+
+### Option 2: Manual Installation (Dockable Panel)
 1. Download or clone this repository.
 2. Copy `Pie_Slice_Generator.jsx` into your After Effects `ScriptUI Panels` directory:
    - **Windows**:
@@ -71,7 +79,7 @@ Designed for motion designers, infographic artists, and UI animators who need cl
 3. Restart After Effects (if open).
 4. Access the panel from the top menu: **Window > Pie_Slice_Generator.jsx**.
 
-### Option 2: Run Without Installing
+### Option 3: Run Without Installing (Floating Window)
 1. In After Effects, navigate to **File > Scripts > Run Script File...**
 2. Browse to and select `Pie_Slice_Generator.jsx`.
 
