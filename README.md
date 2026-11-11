@@ -1,11 +1,11 @@
 # AE Pie Slice Tool (v4.1)
 
-[![Live Browser Simulator](https://img.shields.io/badge/Live%20Demo-AE%20ScriptUI%20Simulator-2c8cff?style=for-the-badge&logo=javascript)](https://work2survive.github.io/AE_JS_builder/)
+[![Live Browser Simulator](https://img.shields.io/badge/Live%20Demo-AE%20ScriptUI%20Simulator-2c8cff?style=for-the-badge&logo=javascript)](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 A powerful, expression-driven Adobe After Effects ScriptUI panel for generating parametric circular sectors, pie slices, arcs, and elliptical wedges as native Shape Layers.
 
-> **Live Browser Simulator**: Test and preview this tool interactively in the [AE JS & ScriptUI Simulator](https://work2survive.github.io/AE_JS_builder/) directly in your web browser without launching After Effects!
+> **Live Browser Simulator**: Test and preview this tool interactively in the [AE JS & ScriptUI Simulator](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx) directly in your web browser without launching After Effects!
 
 Designed for motion designers, infographic artists, and UI animators who need clean, animatable pie charts and circular slices with independent corner rounding and zero visual artifacts. Compatible with Adobe After Effects CS6 through CC 2026+.
 
