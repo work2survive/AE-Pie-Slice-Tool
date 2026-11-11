@@ -3,6 +3,7 @@
 [![Live Browser Simulator](https://img.shields.io/badge/Live%20Demo-AE%20ScriptUI%20Simulator-2c8cff?style=for-the-badge&logo=javascript)](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-CS6%20--%20CC%202026%2B-9999FF?style=for-the-badge&logo=adobeaftereffects)](https://www.adobe.com/products/aftereffects.html)
+[![Built with Antigravity](https://img.shields.io/badge/Built%20With-Antigravity-4285F4?style=for-the-badge&logo=google)](https://deepmind.google/)
 
 **Live Demo**: [https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx](https://work2survive.github.io/AE_JS_builder/?jsx=Pie_Slice_Generator.jsx)
 
@@ -115,6 +116,12 @@ Once created, the layer contains the following controls in its **Effect Controls
 - **Overlapping Corners**: When creating sharp acute slices, the solver ensures Vertex A retains maximum rounding priority, gently adjusting B and C to prevent self-intersections.
 
 ---
+
+---
+
+## 🤖 Acknowledgments
+
+Engineered, architected, and co-developed using **[Google DeepMind Antigravity](https://deepmind.google/)** agentic coding assistant.
 
 ## 📄 License
 
